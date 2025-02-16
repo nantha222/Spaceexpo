@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACExpo - Explore the Cosmos</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div><img src="images/logo.png" alt="SPACExpo Logo" class="logo-img"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solar-system.html">Solar System</a></li>
+            <li><a href="spacecraft.html">Spacecraft</a></li>
+            <li><a href="rockets.html">Rockets</a></li>
+            <li><a href="exploration.html">Human Exploration</a></li>    
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Explore the Universe in 3D!</h1>
+            <p>Interactive 3D models to learn about solar system like never before.</p><br>
+            <a href="solar-system.html" class="cta-button">Start Exploring</a>
+        </div>
+    </header>
+
+    <section class="featured">
+        <h2>Featured: The Saturn V Rocket</h2>
+        <div class="model-placeholder">
+            <div id="rocket-container"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 SPACExpo. All rights reserved.</p>
+    </footer>
+
+    <!-- Three.js and App Script -->
+    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js"></script>    
+</body>
+</html>

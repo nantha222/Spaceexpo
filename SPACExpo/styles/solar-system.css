@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b1d3a; /* Dark blue for a space-themed look */
+    color: #ffffff;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #0b1d3a, #1f3b5c);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00aaff;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+.logo-img {
+    height:30px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #00aaff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid #00aaff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+section ul {
+    padding-left: 30px;
+    line-height: 2;
+}
+
+section li {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.model-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 500px;
+    background-color: rgba(26, 45, 80, 0.7);
+    border: 3px solid #00aaff;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1f3b5c;
+    color: #aaa;
+    margin-top: 60px;
+    border-top: 3px solid #00aaff;
+    font-size: 1.1em;
+}

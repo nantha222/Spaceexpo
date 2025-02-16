@@ -1,0 +1,20 @@
+{
+  "name": "local-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lil-gui": "^0.19.2",
+    "three": "^0.166.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

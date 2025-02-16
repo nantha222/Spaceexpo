@@ -1,0 +1,81 @@
+/* styles/style.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/space_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #c5c6c7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1f2833;
+}
+.logo-img {
+    height:30px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #00aaff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}   
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li a {
+    color: #66fcf1;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(2, 4, 6, 0.7), rgba(2, 4, 6, 0.7));
+}
+.hero-content {
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3em;
+}
+.cta-button {
+    background: #66fcf1;
+    color: #0b0c10;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.model-placeholder {
+    height: 500px;
+    background-color: #000;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2833;
+}
